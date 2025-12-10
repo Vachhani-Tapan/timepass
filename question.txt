@@ -1992,422 +1992,407 @@ function generateCSSQuestions() {
 // HTML question
 function generateHTMLQuestions() {
             return [
-                {
-                    question: "Which HTML5 element is used for navigation links?",
-                    options: ["<nav>", "<header>", "<footer>", "<aside>"],
-                    correct: 0,
-                    explanation: "The <nav> HTML element represents a section of a page whose purpose is to provide navigation links.",
-                    tips: ["Use semantic HTML elements for better accessibility", "<nav> should contain major navigation blocks", "Screen readers use semantic elements to navigate pages"]
-                },
-                {
-                    question: "What does HTML stand for?",
-                    options: ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
-                    correct: 0,
-                    explanation: "HTML stands for Hyper Text Markup Language, which is the standard markup language for documents designed to be displayed in a web browser.",
-                    tips: ["HTML describes the structure of a web page", "HTML elements are the building blocks of HTML pages", "HTML is not a programming language"]
-                },
-                {
-                    question: "Which HTML5 element is used for navigation links?",
-                    options: ["<nav>", "<header>", "<footer>", "<aside>"],
-                    correct: 0,
-                    explanation: "The <nav> HTML element represents a section of a page whose purpose is to provide navigation links.",
-                    tips: ["Use semantic HTML elements for better accessibility", "<nav> should contain major navigation blocks", "Screen readers use semantic elements to navigate pages"]
-                },
-                {
-                    question: "What does HTML stand for?",
-                    options: ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Language", "Home Tool Markup Language"],
-                    correct: 0,
-                    explanation: "HTML stands for Hyper Text Markup Language, which is the standard markup language for documents designed to be displayed in a web browser.",
-                    tips: ["HTML describes the structure of a web page", "HTML elements are the building blocks of HTML pages", "HTML is not a programming language"]
-                },
-                {
-                    question: "Which attribute is used to specify an alternate text for an image?",
-                    options: ["alt", "title", "src", "href"],
-                    correct: 0,
-                    explanation: "The 'alt' attribute provides alternative text for an image if it cannot be displayed.",
-                    tips: ["Alt text is important for accessibility", "Search engines use alt text for image SEO", "Always provide meaningful alt text for images"]
-                },
-                {
-                    question: "Which HTML element is used to define the most important heading?",
-                    options: ["<h1>", "<head>", "<header>", "<heading>"],
-                    correct: 0,
-                    explanation: "<h1> defines the most important heading, while <h6> defines the least important heading.",
-                    tips: ["Use only one <h1> per page for SEO", "Headings should follow a logical hierarchy", "Don't skip heading levels"]
-                },
-                {
-                    question: "Which character is used to indicate an end tag?",
-                    options: ["/", "*", "#", "!"],
-                    correct: 0,
-                    explanation: "End tags begin with a forward slash (/) character, e.g., </p>.",
-                    tips: ["Always close your HTML elements", "Some elements are self-closing", "Proper closing prevents rendering issues"]
-                },
-                {
-                    question: "What is the correct HTML for creating a hyperlink?",
-                    options: ["<a href='http://example.com'>Link</a>", "<link src='http://example.com'>", "<a url='http://example.com'>Link</a>", "<hyperlink>http://example.com</hyperlink>"],
-                    correct: 0,
-                    explanation: "The <a> tag defines a hyperlink with the 'href' attribute specifying the link destination.",
-                    tips: ["Use relative URLs for internal links", "Add target='_blank' to open in new tab", "Use descriptive link text for accessibility"]
-                },
-                {
-                    question: "Which HTML element is used to specify a footer for a document or section?",
-                    options: ["<footer>", "<bottom>", "<section>", "<end>"],
-                    correct: 0,
-                    explanation: "The <footer> element represents a footer for its nearest sectioning content or sectioning root element.",
-                    tips: ["Footers typically contain copyright info", "A document can have multiple footers", "Footer is a semantic HTML5 element"]
-                },
-                {
-                    question: "Which HTML element is used to display a scalar measurement within a known range?",
-                    options: ["<meter>", "<progress>", "<range>", "<scale>"],
-                    correct: 0,
-                    explanation: "<meter> represents a scalar measurement within a known range, like disk usage.",
-                    tips: ["<meter> is for static values", "<progress> is for task completion", "Both have different semantic meanings"]
-                },
-                {
-                    question: "Which attribute makes an input field required in HTML5 forms?",
-                    options: ["required", "mandatory", "validate", "necessary"],
-                    correct: 0,
-                    explanation: "The 'required' attribute specifies that an input field must be filled out before submitting the form.",
-                    tips: ["Provides built-in validation", "Works with most input types", "Customize validation with JavaScript"]
-                },
-                {
-                    question: "Which HTML element defines the title of a document?",
-                    options: ["<title>", "<head>", "<meta>", "<header>"],
-                    correct: 0,
-                    explanation: "The <title> element defines the title of the document shown in browser's title bar or tab.",
-                    tips: ["Important for SEO", "Should be concise and descriptive", "Appears in search engine results"]
-                },
-                {
-                    question: "Which HTML5 element represents a self-contained composition?",
-                    options: ["<article>", "<section>", "<div>", "<content>"],
-                    correct: 0,
-                    explanation: "<article> represents a self-contained composition that could be distributed independently.",
-                    tips: ["Examples: blog post, news article", "Should make sense on its own", "Can be nested in other articles"]
-                },
-                {
-                    question: "What does the <canvas> element provide?",
-                    options: ["A drawing surface for JavaScript", "A container for images", "A video playback area", "A 3D modeling space"],
-                    correct: 0,
-                    explanation: "<canvas> is used to draw graphics via JavaScript, suitable for games, graphs, and other visuals.",
-                    tips: ["Requires JavaScript to draw", "Provides 2D drawing context", "Alternative to Flash for animations"]
-                },
-                {
-                    question: "Which HTML element is used to define emphasized text?",
-                    options: ["<em>", "<italic>", "<strong>", "<bold>"],
-                    correct: 0,
-                    explanation: "<em> marks text that has stress emphasis, typically displayed in italic.",
-                    tips: ["Screen readers change voice for <em>", "Use for linguistic emphasis", "<i> is for stylistic italic"]
-                },
-                {
-                    question: "What is the purpose of the <datalist> element?",
-                    options: ["Provides pre-defined options for input", "Creates a list of data items", "Stores hidden form data", "Defines a dropdown menu"],
-                    correct: 0,
-                    explanation: "<datalist> contains a set of <option> elements that represent predefined values for an <input>.",
-                    tips: ["Creates autocomplete functionality", "Works with text input types", "Users can still enter custom values"]
-                },
-                {
-                    question: "Which HTML element is used for short quotations?",
-                    options: ["<q>", "<quote>", "<blockquote>", "<cite>"],
-                    correct: 0,
-                    explanation: "<q> is for short inline quotations, while <blockquote> is for longer block quotations.",
-                    tips: ["Browsers typically add quotes", "Use 'cite' attribute for source URL", "Screen readers announce as quote"]
-                },
-                {
-                    question: "What does the <abbr> element represent?",
-                    options: ["An abbreviation or acronym", "An abstract", "An absolute URL", "An embedded object"],
-                    correct: 0,
-                    explanation: "<abbr> represents an abbreviation or acronym, with the full form optionally provided via the 'title' attribute.",
-                    tips: ["Use title attribute for expansion", "Helpful for accessibility", "Use for unfamiliar abbreviations"]
-                },
-                {
-                    question: "Which HTML5 element defines a thematic break?",
-                    options: ["<hr>", "<br>", "<break>", "<separator>"],
-                    correct: 0,
-                    explanation: "<hr> represents a thematic break between paragraph-level elements, like a scene change.",
-                    tips: ["Semantically means thematic break", "Not just a visual line", "Screen readers announce it"]
-                },
-                {
-                    question: "What is the default method attribute value for a <form> element?",
-                    options: ["GET", "POST", "PUT", "DELETE"],
-                    correct: 0,
-                    explanation: "If the method attribute is not specified, the form data is sent using the GET method.",
-                    tips: ["GET appends data to URL", "POST sends data in request body", "Use GET for non-sensitive data"]
-                },
-                {
-                    question: "Which HTML element defines a section that is quoted from another source?",
-                    options: ["<blockquote>", "<quote>", "<cite>", "<q>"],
-                    correct: 0,
-                    explanation: "<blockquote> specifies a section that is quoted from another source, typically displayed as indented.",
-                    tips: ["Use for longer quotations", "Include cite attribute for source", "Often used with <cite> element"]
-                },
-                {
-                    question: "What does the <mark> element represent?",
-                    options: ["Text highlighted for reference", "Important text", "Warning text", "Deleted text"],
-                    correct: 0,
-                    explanation: "<mark> represents text marked or highlighted for reference or notation purposes.",
-                    tips: ["Like a highlighter pen", "Use for search results highlighting", "Has semantic meaning, not just yellow"]
-                },
-                {
-                    question: "Which attribute specifies that an input field must be filled out?",
-                    options: ["required", "placeholder", "validate", "necessary"],
-                    correct: 0,
-                    explanation: "The 'required' attribute is a boolean attribute that specifies the input field must be filled out.",
-                    tips: ["HTML5 validation feature", "Browsers show error messages", "Can be overridden with novalidate"]
-                },
-                {
-                    question: "Which HTML element is used for subscript text?",
-                    options: ["<sub>", "<sup>", "<subscript>", "<low>"],
-                    correct: 0,
-                    explanation: "<sub> defines subscript text, which appears half a character below the normal line.",
-                    tips: ["Common in chemical formulas", "Also used for mathematical variables", "Screen readers pronounce appropriately"]
-                },
-                {
-                    question: "What is the purpose of the <details> element?",
-                    options: ["Creates a disclosure widget", "Shows detailed information", "Creates a tooltip", "Defines metadata"],
-                    correct: 0,
-                    explanation: "<details> creates a disclosure widget where information is visible only when toggled open.",
-                    tips: ["Often used with <summary>", "Native accordion without JavaScript", "Saves space on mobile"]
-                },
-                {
-                    question: "Which HTML element defines a table row?",
-                    options: ["<tr>", "<td>", "<th>", "<table-row>"],
-                    correct: 0,
-                    explanation: "<tr> defines a row in an HTML table, which contains table data (<td>) or table header (<th>) cells.",
-                    tips: ["Tables need proper structure", "Use <thead>, <tbody>, <tfoot>", "Accessible tables need scope attributes"]
-                },
-                {
-                    question: "What does the <time> element represent?",
-                    options: ["A specific period in time", "A clock display", "A timer", "A date picker"],
-                    correct: 0,
-                    explanation: "<time> represents a specific period in time, with an optional machine-readable datetime attribute.",
-                    tips: ["Machine-readable datetime format", "Helps with search engines", "Use for events, publications"]
-                },
-                {
-                    question: "Which HTML element is used for superscript text?",
-                    options: ["<sup>", "<sub>", "<superscript>", "<high>"],
-                    correct: 0,
-                    explanation: "<sup> defines superscript text, which appears half a character above the normal line.",
-                    tips: ["Common for footnotes", "Used in mathematical exponents", "Also for ordinal numbers (1st, 2nd)"]
-                },
-                {
-                    question: "What is the purpose of the <output> element?",
-                    options: ["Represents result of a calculation", "Displays output text", "Shows form submission result", "Contains script output"],
-                    correct: 0,
-                    explanation: "<output> represents the result of a calculation or user action, often used with forms.",
-                    tips: ["Has 'for' attribute to link inputs", "Semantic element for results", "Can be styled with CSS"]
-                },
-                {
-                    question: "Which HTML element defines an unordered list?",
-                    options: ["<ul>", "<ol>", "<li>", "<list>"],
-                    correct: 0,
-                    explanation: "<ul> defines an unordered (bulleted) list, with list items defined by <li> elements.",
-                    tips: ["Use for non-sequential items", "Can be nested for sub-menus", "Style bullets with CSS list-style"]
-                },
-                {
-                    question: "What does the <kbd> element represent?",
-                    options: ["Keyboard input", "Code snippet", "Keyboard key", "User input"],
-                    correct: 0,
-                    explanation: "<kbd> represents keyboard input, voice input, or any other text entry device input.",
-                    tips: ["Mono-spaced font by default", "Use for keyboard shortcuts", "Helpful in documentation"]
-                },
-                {
-                    question: "Which HTML element defines a header for a document or section?",
-                    options: ["<header>", "<head>", "<h1>", "<top>"],
-                    correct: 0,
-                    explanation: "<header> represents introductory content or navigational aids for its nearest ancestor.",
-                    tips: ["Can contain multiple headings", "Not the same as <head>", "Page can have multiple headers"]
-                },
-                {
-                    question: "What is the purpose of the <samp> element?",
-                    options: ["Sample output from a program", "Sample input", "Sample code", "Sample text"],
-                    correct: 0,
-                    explanation: "<samp> is used to enclose text that represents sample output from a computer program.",
-                    tips: ["Mono-spaced font by default", "Use for program output examples", "Semantic element for samples"]
-                },
-                {
-                    question: "Which HTML element defines an ordered list?",
-                    options: ["<ol>", "<ul>", "<li>", "<list>"],
-                    correct: 0,
-                    explanation: "<ol> defines an ordered (numbered) list, with list items defined by <li> elements.",
-                    tips: ["Use for sequential items", "Type attribute changes numbering style", "Start attribute sets starting number"]
-                },
-                {
-                    question: "What does the <var> element represent?",
-                    options: ["A variable in math or programming", "Variant text", "Variable data", "Varying content"],
-                    correct: 0,
-                    explanation: "<var> represents a variable in a mathematical expression or programming context.",
-                    tips: ["Typically displayed in italic", "Use in documentation", "Semantic element for variables"]
-                },
-                {
-                    question: "Which HTML element defines a section in a document?",
-                    options: ["<section>", "<div>", "<article>", "<part>"],
-                    correct: 0,
-                    explanation: "<section> represents a standalone section of content, typically with a heading.",
-                    tips: ["Should have thematic grouping", "Use for chapters, tabs content", "Different from generic <div>"]
-                },
-                {
-                    question: "What is the purpose of the <wbr> element?",
-                    options: ["Word break opportunity", "Line break", "Word boundary", "Wrap break"],
-                    correct: 0,
-                    explanation: "<wbr> represents a word break opportunity—a position within text where the browser may break a line.",
-                    tips: ["For long URLs or words", "Doesn't force break, suggests it", "Useful for responsive design"]
-                },
-                {
-                    question: "Which HTML element defines a description list?",
-                    options: ["<dl>", "<dt>", "<dd>", "<description>"],
-                    correct: 0,
-                    explanation: "<dl> defines a description list, with <dt> for terms and <dd> for descriptions.",
-                    tips: ["Use for glossaries", "Can have multiple <dd> per <dt>", "Semantic alternative to custom layouts"]
-                },
-                {
-                    question: "What does the <bdi> element do?",
-                    options: ["Isolates bidirectional text", "Bolds text", "Defines bidirectional override", "Isolates inline element"],
-                    correct: 0,
-                    explanation: "<bdi> isolates a span of text that might be formatted in a different direction from other text.",
-                    tips: ["Use for user-generated content", "Prevents direction corruption", "Important for mixed language content"]
-                },
-                {
-                    question: "Which HTML element defines a caption for a figure?",
-                    options: ["<figcaption>", "<caption>", "<legend>", "<description>"],
-                    correct: 0,
-                    explanation: "<figcaption> represents a caption or legend for the rest of the contents of its parent <figure>.",
-                    tips: ["Should be first or last child of <figure>", "Improves accessibility", "Helpful for screen readers"]
-                },
-                {
-                    question: "What is the purpose of the <template> element?",
-                    options: ["Holds client-side content for JavaScript", "Defines page template", "Stores reusable HTML", "Contains layout structure"],
-                    correct: 0,
-                    explanation: "<template> holds HTML that isn't rendered immediately but can be instantiated later with JavaScript.",
-                    tips: ["Content is inert until activated", "Great for web components", "Doesn't affect page until used"]
-                },
-                {
-                    question: "Which HTML element defines a thematic grouping of content?",
-                    options: ["<section>", "<div>", "<group>", "<content>"],
-                    correct: 0,
-                    explanation: "<section> represents a thematic grouping of content, typically with a heading.",
-                    tips: ["Should make sense in outline", "Use for distinct content areas", "Not for styling purposes"]
-                },
-                {
-                    question: "What does the <data> element provide?",
-                    options: ["Machine-readable value with human content", "Data attribute", "Data storage", "Data visualization"],
-                    correct: 0,
-                    explanation: "<data> links a given content with a machine-readable translation via the 'value' attribute.",
-                    tips: ["Good for product codes, dates", "Value attribute is machine-readable", "Similar to <time> but generic"]
-                },
-                {
-                    question: "Which HTML element defines a scalar measurement with a known range?",
-                    options: ["<meter>", "<progress>", "<range>", "<measure>"],
-                    correct: 0,
-                    explanation: "<meter> represents a scalar measurement within a known range, like disk usage.",
-                    tips: ["Has min, max, value attributes", "For static values, not progress", "Browser shows visual gauge"]
-                },
-                {
-                    question: "What is the purpose of the <dialog> element?",
-                    options: ["Defines a dialog box or window", "Creates conversation text", "Makes dialog bubbles", "Defines user interaction"],
-                    correct: 0,
-                    explanation: "<dialog> defines a dialog box or other interactive component like an inspector or window.",
-                    tips: ["Native modal dialogs", "Use showModal() method", "Backdrop pseudo-element for styling"]
-                },
-                {
-                    question: "Which HTML element defines a progress bar?",
-                    options: ["<progress>", "<meter>", "<bar>", "<loading>"],
-                    correct: 0,
-                    explanation: "<progress> represents the completion progress of a task, typically displayed as a progress bar.",
-                    tips: ["For dynamic progress", "Has value and max attributes", "Indeterminate state when no value"]
-                },
-                {
-                    question: "What does the <ruby> element represent?",
-                    options: ["Ruby annotations for East Asian typography", "Ruby programming code", "Red colored text", "Precious text"],
-                    correct: 0,
-                    explanation: "<ruby> represents small annotations for pronunciation or meaning, used in East Asian typography.",
-                    tips: ["Used with <rt> for annotation", "<rp> for fallback parentheses", "Common in Japanese furigana"]
-                },
-                {
-                    question: "Which HTML element defines a table header cell?",
-                    options: ["<th>", "<td>", "<thead>", "<header>"],
-                    correct: 0,
-                    explanation: "<th> defines a header cell in an HTML table, which is bold and centered by default.",
-                    tips: ["Use scope attribute for accessibility", "Can be row or column headers", "Screen readers use for navigation"]
-                },
-                {
-                    question: "What is the purpose of the <slot> element?",
-                    options: ["Placeholder in web component", "Empty space filler", "Slot machine content", "Reserved space"],
-                    correct: 0,
-                    explanation: "<slot> is part of the Web Components technology suite—a placeholder inside a component template.",
-                    tips: ["Used in custom elements", "Allows user-provided content", "Named slots for multiple placeholders"]
-                },
-                {
-                    question: "Which HTML element defines a definition term?",
-                    options: ["<dt>", "<dd>", "<dl>", "<def>"],
-                    correct: 0,
-                    explanation: "<dt> specifies a term in a description list (<dl>), followed by one or more <dd> elements.",
-                    tips: ["Part of description list", "Should be followed by <dd>", "Use for glossary terms"]
-                },
-                {
-                    question: "What does the <picture> element provide?",
-                    options: ["Responsive image resources", "Image gallery", "Image with caption", "Image container"],
-                    correct: 0,
-                    explanation: "<picture> contains multiple <source> elements and one <img> for responsive images.",
-                    tips: ["Art direction for different screens", "Different formats for browsers", "Fallback to <img>"]
-                },
-                {
-                    question: "Which HTML element defines a table data cell?",
-                    options: ["<td>", "<th>", "<tr>", "<data>"],
-                    correct: 0,
-                    explanation: "<td> defines a standard data cell in an HTML table, containing actual table data.",
-                    tips: ["Can span rows/columns", "Use colspan/rowspan attributes", "Should be in <tr> element"]
-                },
-                {
-                    question: "What is the purpose of the <main> element?",
-                    options: ["Represents dominant content", "Main page container", "Primary section", "Body main content"],
-                    correct: 0,
-                    explanation: "<main> represents the dominant content of the <body> of a document.",
-                    tips: ["Should be unique per page", "Not for repeated content", "Screen readers can jump to main"]
-                },
-                {
-                    question: "Which HTML element defines a line break?",
-                    options: ["<br>", "<hr>", "<break>", "<lb>"],
-                    correct: 0,
-                    explanation: "<br> produces a line break in text (carriage-return), useful for poems or addresses.",
-                    tips: ["Empty element (no closing tag)", "Use CSS margins for visual spacing", "Don't overuse for layout"]
-                },
-                {
-                    question: "What does the <colgroup> element define?",
-                    options: ["Group of columns in a table", "Column layout group", "Color group for table", "Collection of columns"],
-                    correct: 0,
-                    explanation: "<colgroup> specifies a group of one or more columns in a table for formatting.",
-                    tips: ["Use with <col> elements", "Apply styles to multiple columns", "Before <thead> in table"]
-                },
-                {
-                    question: "Which HTML element defines a paragraph?",
-                    options: ["<p>", "<para>", "<paragraph>", "<text>"],
-                    correct: 0,
-                    explanation: "<p> defines a paragraph, which browsers automatically add some space before and after.",
-                    tips: ["Don't use for visual spacing", "Use CSS for margins/padding", "Can contain inline elements only"]
-                },
-                {
-                    question: "What is the purpose of the <optgroup> element?",
-                    options: ["Groups options in dropdown", "Option container group", "Optimized group", "Optional group"],
-                    correct: 0,
-                    explanation: "<optgroup> creates a grouping of options within a <select> element, with a label attribute.",
-                    tips: ["Improves dropdown organization", "Label appears but not selectable", "Nested options not allowed"]
-                },
-                {
-                    question: "Which HTML element defines a form?",
-                    options: ["<form>", "<input>", "<fieldset>", "<submit>"],
-                    correct: 0,
-                    explanation: "<form> is used to create an HTML form for user input, with action and method attributes.",
-                    tips: ["Always include method attribute", "Use POST for sensitive data", "Add CSRF tokens for security"]
-                },
-                {
-                    question: "What does the <fieldset> element do?",
-                    options: ["Groups related form elements", "Creates form field container", "Sets form boundaries", "Defines form section"],
-                    correct: 0,
-                    explanation: "<fieldset> groups related elements in a form, often with a <legend> as caption.",
-                    tips: ["Improves form organization", "Helpful for screen readers", "Can style borders with CSS"]
-                }
-                // Add 48 more HTML questions...
-            ];
-        }
+    {
+      "question": "Which HTML5 element is used to define independent, self-contained content?",
+      "options": ["<article>", "<section>", "<main>", "<div>"],
+      "correct": 0,
+      "explanation": "The <article> element represents a complete, self-contained composition that could be distributed and reused independently.",
+      "tips": ["Use <article> for blog posts, news articles, forum posts", "Articles should make sense on their own", "Can be nested inside other articles"]
+    },
+    {
+      "question": "Which attribute is used to specify that an input field must be filled out?",
+      "options": ["required", "validate", "mandatory", "mustfill"],
+      "correct": 0,
+      "explanation": "The 'required' attribute is a boolean attribute that specifies the input field must be filled out before submitting the form.",
+      "tips": ["Works with text, email, password, date inputs", "Browsers show default validation messages", "Can be overridden with JavaScript validation"]
+    },
+    {
+      "question": "Which HTML5 element is used for side content related to the main content?",
+      "options": ["<nav>", "<header>", "<footer>", "<aside>"],
+      "correct": 3,
+      "explanation": "The <aside> element represents a portion of a document whose content is indirectly related to the main content.",
+      "tips": ["Often used for sidebars, pull quotes, advertisements", "Should be semantically related to surrounding content", "Can be nested inside <article> or <section>"]
+    },
+    {
+      "question": "Which input type creates a color picker?",
+      "options": ["colorpicker", "picker", "color", "selectcolor"],
+      "correct": 2,
+      "explanation": "The input type='color' provides a color picker interface allowing users to select a color.",
+      "tips": ["Returns value in hexadecimal format (#RRGGBB)", "Can set default value with value attribute", "Not supported uniformly across all browsers"]
+    },
+    {
+      "question": "Which HTML5 element is used to group related elements in a form?",
+      "options": ["<formgroup>", "<fieldset>", "<group>", "<inputs>"],
+      "correct": 1,
+      "explanation": "The <fieldset> element is used to group several controls and labels within a web form.",
+      "tips": ["Often used with <legend> for the group title", "Improves accessibility for screen readers", "Can be disabled to disable all contained controls"]
+    },
+    {
+      "question": "Which element represents the footer for its nearest sectioning content?",
+      "options": ["<bottom>", "<footer>", "<end>", "<close>"],
+      "correct": 1,
+      "explanation": "The <footer> element represents a footer for its nearest sectioning content or sectioning root element.",
+      "tips": ["Typically contains authorship, copyright, contact info", "Can have multiple footers on one page", "Not necessarily at the bottom of the viewport"]
+    },
+    {
+      "question": "Which attribute makes an input field read-only?",
+      "options": ["disabled", "static", "readonly", "fixed"],
+      "correct": 2,
+      "explanation": "The 'readonly' attribute makes an input field uneditable but still includes its value in form submission.",
+      "tips": ["Value is submitted with the form", "User can still select and copy text", "Different from 'disabled' which prevents submission"]
+    },
+    {
+      "question": "Which HTML5 element is used for video content?",
+      "options": ["<media>", "<video>", "<movie>", "<player>"],
+      "correct": 1,
+      "explanation": "The <video> element embeds video content in an HTML document with native playback controls.",
+      "tips": ["Supports multiple source formats with <source> elements", "Includes attributes like controls, autoplay, loop", "Can provide fallback content for unsupported browsers"]
+    },
+    {
+      "question": "Which input type is used for email addresses with built-in validation?",
+      "options": ["mail", "email", "text with type='email'", "address"],
+      "correct": 1,
+      "explanation": "The input type='email' is specifically for email addresses and provides built-in validation in modern browsers.",
+      "tips": ["Mobile devices show email-optimized keyboards", "Supports multiple emails with 'multiple' attribute", "Validation pattern can be customized with 'pattern' attribute"]
+    },
+    {
+      "question": "Which element defines a header for a document or section?",
+      "options": ["<head>", "<heading>", "<header>", "<top>"],
+      "correct": 2,
+      "explanation": "The <header> element represents introductory content, typically a group of introductory or navigational aids.",
+      "tips": ["Can contain heading elements, logos, search forms", "Can be used multiple times on one page", "Different from <head> which contains metadata"]
+    },
+    {
+      "question": "Which attribute specifies an alternative text for images?",
+      "options": ["title", "description", "alt", "alternative"],
+      "correct": 2,
+      "explanation": "The 'alt' attribute provides alternative text for images when they cannot be displayed.",
+      "tips": ["Required for accessibility", "Used by screen readers", "Displayed when image fails to load", "Helps with SEO"]
+    },
+    {
+      "question": "Which HTML5 element is used for scalar measurement within a known range?",
+      "options": ["<range>", "<meter>", "<scale>", "<progress>"],
+      "correct": 1,
+      "explanation": "The <meter> element represents a scalar measurement within a known range, or a fractional value.",
+      "tips": ["Used for disk usage, voting results, etc.", "Has attributes: value, min, max, low, high, optimum", "Different from <progress> which shows task completion"]
+    },
+    {
+      "question": "Which input type is used for telephone numbers?",
+      "options": ["number", "phone", "telephone", "tel"],
+      "correct": 3,
+      "explanation": "The input type='tel' is used for telephone numbers, and mobile devices often display a telephone keypad.",
+      "tips": ["No automatic validation (formats vary internationally)", "Mobile devices show phone-specific keyboards", "Can use pattern attribute for custom validation"]
+    },
+    {
+      "question": "Which element represents the main content of a document?",
+      "options": ["<body>", "<main>", "<content>", "<primary>"],
+      "correct": 1,
+      "explanation": "The <main> element represents the dominant content of the <body> of a document.",
+      "tips": ["Should be unique per page", "Not for repeated content like navigation", "Assists screen readers in identifying main content"]
+    },
+    {
+      "question": "Which attribute defines a unique identifier for an element?",
+      "options": ["class", "name", "id", "identifier"],
+      "correct": 2,
+      "explanation": "The 'id' attribute specifies a unique identifier for an HTML element, which must be unique within the document.",
+      "tips": ["Used for CSS styling and JavaScript manipulation", "Can be used as anchor links", "Must start with a letter, not a number"]
+    },
+    {
+      "question": "Which element defines a section in a document?",
+      "options": ["<div>", "<section>", "<area>", "<part>"],
+      "correct": 1,
+      "explanation": "The <section> element represents a standalone section of content, typically with a heading.",
+      "tips": ["Should have thematic grouping", "Often used for chapters, tabs content", "Different from <article> which is independently distributable"]
+    },
+    {
+      "question": "Which input type creates a slider control?",
+      "options": ["slider", "range", "number", "slide"],
+      "correct": 1,
+      "explanation": "The input type='range' creates a slider control for selecting a number from a range.",
+      "tips": ["Uses min, max, step, and value attributes", "Exact value not displayed by default", "Can use JavaScript to show current value"]
+    },
+    {
+      "question": "Which element is used for a thematic break or separator?",
+      "options": ["<break>", "<hr>", "<separator>", "<line>"],
+      "correct": 1,
+      "explanation": "The <hr> element represents a thematic break between paragraph-level elements.",
+      "tips": ["Historically a horizontal rule, now semantic break", "Used between sections of content", "Styled with CSS, not just a horizontal line"]
+    },
+    {
+      "question": "Which attribute specifies that an element is not yet relevant?",
+      "options": ["inactive", "hidden", "disabled", "invisible"],
+      "correct": 1,
+      "explanation": "The 'hidden' attribute indicates that an element is not yet, or is no longer, relevant.",
+      "tips": ["Browsers won't render hidden elements", "Different from CSS display: none", "Can be toggled with JavaScript"]
+    },
+    {
+      "question": "Which element defines a date/time?",
+      "options": ["<date>", "<time>", "<datetime>", "<calendar>"],
+      "correct": 1,
+      "explanation": "The <time> element represents a specific period in time, which can include a datetime attribute.",
+      "tips": ["Machine-readable with datetime attribute", "Human-readable content inside tags", "Useful for search engines and calendars"]
+    },
+    {
+      "question": "Which input type is used for week selection?",
+      "options": ["week", "date-week", "calendar", "weekpicker"],
+      "correct": 0,
+      "explanation": "The input type='week' allows users to select a week and year from a date picker.",
+      "tips": ["Returns value in YYYY-W## format", "Browser support varies", "Useful for scheduling and reporting"]
+    },
+    {
+      "question": "Which element represents a dialog box or window?",
+      "options": ["<dialog>", "<modal>", "<popup>", "<window>"],
+      "correct": 0,
+      "explanation": "The <dialog> element represents a dialog box or other interactive component.",
+      "tips": ["Can be modal or non-modal", "Use show() or showModal() methods", "Backdrop styling available with ::backdrop pseudo-element"]
+    },
+    {
+      "question": "Which attribute sets the maximum value for an input?",
+      "options": ["maximum", "top", "max", "limit"],
+      "correct": 2,
+      "explanation": "The 'max' attribute specifies the maximum value for an input field.",
+      "tips": ["Works with number, range, date, time inputs", "Used with 'min' to define a range", "Browser validation prevents values above max"]
+    },
+    {
+      "question": "Which element is used for figure captions?",
+      "options": ["<caption>", "<figcaption>", "<figuretext>", "<legend>"],
+      "correct": 1,
+      "explanation": "The <figcaption> element represents a caption or legend for a <figure> element.",
+      "tips": ["Optional element inside <figure>", "Can be first or last child of <figure>", "Improves accessibility for images/charts"]
+    },
+    {
+      "question": "Which input type is used for search queries?",
+      "options": ["text", "query", "find", "search"],
+      "correct": 3,
+      "explanation": "The input type='search' is used for search fields, and browsers may add search-specific features.",
+      "tips": ["Some browsers add a clear button (x)", "Mobile keyboards may show search button", "Semantically indicates a search field"]
+    },
+    {
+      "question": "Which element represents a multi-line text input?",
+      "options": ["<input type='textarea'>", "<textbox>", "<textarea>", "<multiline>"],
+      "correct": 2,
+      "explanation": "The <textarea> element represents a multi-line plain-text editing control.",
+      "tips": ["Use rows and cols attributes for size", "Can be resized with CSS resize property", "Content is between opening and closing tags"]
+    },
+    {
+      "question": "Which attribute enables automatic completion?",
+      "options": ["autocomplete", "autofill", "suggest", "complete"],
+      "correct": 0,
+      "explanation": "The 'autocomplete' attribute lets web developers specify if a field should have autocomplete enabled.",
+      "tips": ["Can be 'on' or 'off'", "Browser uses stored values for completion", "Respect user privacy with sensitive fields"]
+    },
+    {
+      "question": "Which element represents a caption for a table?",
+      "options": ["<caption>", "<tabletitle>", "<summary>", "<thead>"],
+      "correct": 0,
+      "explanation": "The <caption> element specifies the caption (or title) of a table.",
+      "tips": ["Should be the first child of <table>", "Screen readers announce captions", "Useful for table context and accessibility"]
+    },
+    {
+      "question": "Which input type is used for file selection?",
+      "options": ["file", "upload", "attachment", "browse"],
+      "correct": 0,
+      "explanation": "The input type='file' lets users select one or more files from their device storage.",
+      "tips": ["Use accept attribute to filter file types", "multiple attribute allows multiple files", "Styling limitations due to security restrictions"]
+    },
+    {
+      "question": "Which element defines important text?",
+      "options": ["<important>", "<strong>", "<bold>", "<emphasis>"],
+      "correct": 1,
+      "explanation": "The <strong> element indicates that its contents have strong importance, seriousness, or urgency.",
+      "tips": ["Browsers typically render as bold", "Different from <b> which is just stylistic", "Screen readers may change tone for <strong>"]
+    },
+    {
+      "question": "Which attribute specifies the legal number intervals?",
+      "options": ["interval", "step", "increment", "skip"],
+      "correct": 1,
+      "explanation": "The 'step' attribute specifies the legal number intervals for an input field.",
+      "tips": ["Works with number, range, date/time inputs", "Default is 1 for number, any for date/time", "Use 'any' to allow any decimal number"]
+    },
+    {
+      "question": "Which element marks up ruby annotations?",
+      "options": ["<annotation>", "<ruby>", "<phonetic>", "<rt>"],
+      "correct": 1,
+      "explanation": "The <ruby> element represents small annotations for East Asian typography.",
+      "tips": ["Used for pronunciation guides", "Contains <rt> for ruby text", "<rp> provides fallback parentheses"]
+    },
+    {
+      "question": "Which input type is used for time selection?",
+      "options": ["clock", "time", "hour", "datetime"],
+      "correct": 1,
+      "explanation": "The input type='time' allows users to select a time (hours and minutes).",
+      "tips": ["Returns value in 24-hour format", "Can include seconds with step attribute", "Browser support varies, provide fallbacks"]
+    },
+    {
+      "question": "Which element represents a word break opportunity?",
+      "options": ["<break>", "<wbr>", "<br>", "<split>"],
+      "correct": 1,
+      "explanation": "The <wbr> (Word Break Opportunity) element represents a position where line break may occur if needed.",
+      "tips": ["Useful for long URLs or words", "Different from <br> which forces a break", "Browser breaks only if necessary"]
+    },
+    {
+      "question": "Which attribute defines keyboard shortcuts?",
+      "options": ["shortcut", "accesskey", "hotkey", "keyboard"],
+      "correct": 1,
+      "explanation": "The 'accesskey' attribute specifies a shortcut key to activate/focus an element.",
+      "tips:": ["Browser/OS specific modifier keys needed (Alt, Ctrl, etc.)", "Can conflict with browser/assistive technology shortcuts", "Use sparingly and document for users"]
+    },
+    {
+      "question": "Which element is used for abbreviations?",
+      "options": ["<abbr>", "<acronym>", "<short>", "<abbreviation>"],
+      "correct": 0,
+      "explanation": "The <abbr> element represents an abbreviation or acronym, optionally with expansion.",
+      "tips": ["Use title attribute for full expansion", "Browsers may show dotted underline", "Screen readers may read expansion"]
+    },
+    {
+      "question": "Which input type is used for month selection?",
+      "options": ["month", "date-month", "calendarmonth", "monthpicker"],
+      "correct": 0,
+      "explanation": "The input type='month' allows users to select a month and year from a date picker.",
+      "tips": ["Returns value in YYYY-MM format", "Useful for credit card expirations", "Browser support varies widely"]
+    },
+    {
+      "question": "Which element defines a header for a details element?",
+      "options": ["<header>", "<summary>", "<title>", "<caption>"],
+      "correct": 1,
+      "explanation": "The <summary> element specifies a summary, caption, or legend for a <details> element.",
+      "tips": ["First child of <details>", "Clicking toggles details open/closed", "Browsers typically add toggle marker"]
+    },
+    {
+      "question": "Which attribute specifies the language of the element's content?",
+      "options": ["language", "xml:lang", "lang", "locale"],
+      "correct": 2,
+      "explanation": "The 'lang' attribute specifies the language of the element's content.",
+      "tips": ["Useful for screen readers and translation tools", "Can be set on any HTML element", "Follows BCP 47 language tags (en, en-US, etc.)"]
+    },
+    {
+      "question": "Which element is used for contact information?",
+      "options": ["<contact>", "<address>", "<info>", "<person>"],
+      "correct": 1,
+      "explanation": "The <address> element represents contact information for its nearest article or body ancestor.",
+      "tips": ["Typically contains author/owner contact info", "Not for arbitrary addresses", "Often used in footer for site contact"]
+    },
+    {
+      "question": "Which input type is used for numeric values?",
+      "options": ["text", "numeric", "number", "integer"],
+      "correct": 2,
+      "explanation": "The input type='number' is used for numeric input, and browsers may show spinner controls.",
+      "tips": ["Mobile devices show numeric keyboard", "Use min/max for value constraints", "Step attribute controls increment/decrement"]
+    },
+    {
+      "question": "Which element defines a list of terms and descriptions?",
+      "options": ["<list>", "<dl>", "<definition>", "<terms>"],
+      "correct": 1,
+      "explanation": "The <dl> (Description List) element represents a description list of terms and descriptions.",
+      "tips": ["Contains <dt> (term) and <dd> (description)", "Use for metadata, glossaries, key-value pairs", "Not for dialog or conversation markup"]
+    },
+    {
+      "question": "Which attribute specifies the visible width of a text area?",
+      "options": ["width", "size", "cols", "columns"],
+      "correct": 2,
+      "explanation": "The 'cols' attribute specifies the visible width of a <textarea>, in average character widths.",
+      "tips": ["Default is 20", "Use CSS for precise sizing", "Different from 'rows' which sets height"]
+    },
+    {
+      "question": "Which element represents a piece of computer code?",
+      "options": ["<code>", "<programming>", "<syntax>", "<computer>"],
+      "correct": 0,
+      "explanation": "The <code> element represents a fragment of computer code within text.",
+      "tips": ["Typically rendered in monospace font", "Use <pre> for multiline code blocks", "Can be nested inside <pre> for formatting"]
+    },
+    {
+      "question": "Which input attribute specifies a pattern for validation?",
+      "options": ["regex", "format", "validation", "pattern"],
+      "correct": 3,
+      "explanation": "The 'pattern' attribute specifies a regular expression that the input's value must match.",
+      "tips": ["Works with text, search, url, email, password inputs", "Browser shows validation message", "Use title attribute to describe pattern"]
+    },
+    {
+      "question": "Which element is used for subscript text?",
+      "options": ["<sub>", "<subscript>", "<low>", "<below>"],
+      "correct": 0,
+      "explanation": "The <sub> element represents subscript text, typically for chemical formulas or mathematical indices.",
+      "tips": ["Renders text slightly below baseline", "Use for variables in formulas (H₂O)", "Different from <sup> for superscript"]
+    },
+    {
+      "question": "Which attribute specifies the target for form submission?",
+      "options": ["target", "action", "method", "destination"],
+      "correct": 0,
+      "explanation": "The 'target' attribute specifies where to display the response after form submission.",
+      "tips": ["Common values: _self, _blank, _parent, _top", "Similar to anchor <a> target attribute", "Use _blank for new window/tab"]
+    },
+    {
+      "question": "Which element represents sample output from a computer program?",
+      "options": ["<output>", "<sample>", "<result>", "<console>"],
+      "correct": 0,
+      "explanation": "The <output> element represents the result of a calculation or user action.",
+      "tips": ["Can be associated with form elements", "Use 'for' attribute to associate with inputs", "JavaScript can update content dynamically"]
+    },
+    {
+      "question": "Which input attribute provides hints for autocomplete?",
+      "options": ["autocomplete", "placeholder", "hint", "suggest"],
+      "correct": 1,
+      "explanation": "The 'placeholder' attribute provides a short hint that describes the expected value.",
+      "tips": ["Should not replace <label> elements", "Disappears when user starts typing", "Use for format examples, not instructions"]
+    },
+    {
+      "question": "Which element marks text that is no longer correct?",
+      "options": ["<old>", "<del>", "<remove>", "<strike>"],
+      "correct": 1,
+      "explanation": "The <del> element represents text that has been deleted from a document.",
+      "tips": ["Often used with <ins> for inserted text", "Browsers typically strike through text", "Use datetime attribute to specify when deleted"]
+    },
+    {
+      "question": "Which attribute specifies that a script should be executed asynchronously?",
+      "options": ["async", "defer", "parallel", "immediate"],
+      "correct": 0,
+      "explanation": "The 'async' attribute indicates that a script should be executed asynchronously as soon as available.",
+      "tips": ["Script doesn't block HTML parsing", "Execution order not guaranteed", "Use for independent scripts like analytics"]
+    },
+    {
+      "question": "Which element represents a thematic grouping of content?",
+      "options": ["<group>", "<section>", "<div>", "<block>"],
+      "correct": 1,
+      "explanation": "The <section> element represents a standalone section of content with a thematic grouping.",
+      "tips": ["Should typically have a heading", "Use for distinct content areas", "Different from generic <div> which has no semantic meaning"]
+    },
+    {
+      "question": "Which input type is used for URL input?",
+      "options": ["url", "web", "link", "http"],
+      "correct": 0,
+      "explanation": "The input type='url' is used for URL input, and browsers provide validation for URL format.",
+      "tips": ["Mobile devices may show .com key", "Basic validation for URL format", "Can use pattern for stricter validation"]
+    },
+    {
+      "question": "Which element represents emphasized text?",
+      "options": ["<emphasis>", "<em>", "<italic>", "<stress>"],
+      "correct": 1,
+      "explanation": "The <em> element represents text with stress emphasis, typically rendered in italics.",
+      "tips": ["Screen readers may change intonation", "Different from <i> which is just stylistic", "Can be nested for increased emphasis"]
+    },
+    {
+      "question": "Which attribute specifies the MIME type of a script?",
+      "options": ["type", "mime", "scripttype", "language"],
+      "correct": 0,
+      "explanation": "The 'type' attribute specifies the MIME type of a script, typically 'text/javascript'.",
+      "tips": ["Default is 'text/javascript'", "Required for module scripts: type='module'", "For JSON scripts: type='application/json'"]
+    },
+    {
+      "question": "Which element is used for keyboard input?",
+      "options": ["<key>", "<kbd>", "<keyboard>", "<input>"],
+      "correct": 1,
+      "explanation": "The <kbd> element represents user keyboard input, typically rendered in monospace font.",
+      "tips": ["Use for keyboard shortcuts", "Can be nested for combinations (Ctrl+Alt+Del)", "Different from <code> for computer code"]
+    },
+    {
+      "question": "Which attribute specifies that a script should be executed after page parsing?",
+      "options": ["async", "defer", "wait", "postpone"],
+      "correct": 1,
+      "explanation": "The 'defer' attribute indicates that a script should be executed after the document has been parsed.",
+      "tips": ["Scripts execute in order they appear", "Use for scripts that need full DOM", "Only for external scripts"]
+    }
+];
+}
 
 
 
@@ -2424,159 +2409,376 @@ function generateHTMLQuestions() {
 function generatePythonQuestions() {
             return [
                 {
-                    question: "What is the correct way to create a function in Python?",
-                    options: ["def my_function():", "function my_function():", "create my_function():", "function: my_function()"],
-                    correct: 0,
-                    explanation: "In Python, functions are defined using the 'def' keyword followed by the function name and parentheses.",
-                    tips: ["Python uses indentation to define function body", "Functions can have parameters inside parentheses", "Use 'return' to send a value back from a function"]
-                },
-                {
-                    question: "Which data type is immutable in Python?",
-                    options: ["List", "Dictionary", "Tuple", "Set"],
-                    correct: 2,
-                    explanation: "Tuples are immutable in Python, meaning their elements cannot be changed after creation.",
-                    tips: ["Lists are mutable, tuples are immutable", "Use tuples for data that shouldn't change", "Dictionaries and sets are also mutable"]
-                },
-                {
-                    question: "What does the 'self' parameter represent in Python class methods?",
-                    options: ["The instance of the class", "The parent class", "A static method", "A class variable"],
-                    correct: 0,
-                    explanation: "'self' represents the instance of the class. It's used to access variables and methods associated with the current object.",
-                    tips: ["'self' is a convention, not a keyword", "The first parameter of instance methods should be self", "Class methods use 'cls' as first parameter"]
-                },
-                {
-                    question: "What is list comprehension in Python?",
-                    options: ["A concise way to create lists", "A method to understand lists", "A type of list sorting", "A list debugging tool"],
-                    correct: 0,
-                    explanation: "List comprehension provides a concise way to create lists based on existing lists or other iterables.",
-                    tips: ["Syntax: [expression for item in iterable if condition]", "More readable than map() and filter()", "Can be nested for multiple loops"]
-                },
-                {
-                    question: "What is the purpose of __init__ method in Python?",
-                    options: ["To initialize object attributes", "To import modules", "To define class inheritance", "To create static methods"],
-                    correct: 0,
-                    explanation: "__init__ is a special method in Python classes that is automatically called when a new object is created.",
-                    tips: ["Similar to constructors in other languages", "First parameter should be 'self'", "Can accept additional parameters for initialization"]
-                },
-                {
-                    question: "What is the correct way to create a function in Python?",
-                    options: ["def my_function():", "function my_function():", "create my_function():", "function: my_function()"],
-                    correct: 0,
-                    explanation: "In Python, functions are defined using the 'def' keyword followed by the function name and parentheses.",
-                    tips: ["Python uses indentation to define function body", "Functions can have parameters inside parentheses", "Use 'return' to send a value back from a function"]
-                },
-                {
-                    question: "Which data type is immutable in Python?",
-                    options: ["List", "Dictionary", "Tuple", "Set"],
-                    correct: 2,
-                    explanation: "Tuples are immutable in Python, meaning their elements cannot be changed after creation.",
-                    tips: ["Lists are mutable, tuples are immutable", "Use tuples for data that shouldn't change", "Dictionaries and sets are also mutable"]
-                },
-                {
-                    question: "What does the 'self' parameter represent in Python class methods?",
-                    options: ["The instance of the class", "The parent class", "A static method", "A class variable"],
-                    correct: 0,
-                    explanation: "'self' represents the instance of the class. It's used to access variables and methods associated with the current object.",
-                    tips: ["'self' is a convention, not a keyword", "The first parameter of instance methods should be self", "Class methods use 'cls' as first parameter"]
-                },
-                {
-                    question: "What is list comprehension in Python?",
-                    options: ["A concise way to create lists", "A method to understand lists", "A type of list sorting", "A list debugging tool"],
-                    correct: 0,
-                    explanation: "List comprehension provides a concise way to create lists based on existing lists or other iterables.",
-                    tips: ["Syntax: [expression for item in iterable if condition]", "More readable than map() and filter()", "Can be nested for multiple loops"]
-                },
-                {
-                    question: "What is the purpose of __init__ method in Python?",
-                    options: ["To initialize object attributes", "To import modules", "To define class inheritance", "To create static methods"],
-                    correct: 0,
-                    explanation: "__init__ is a special method in Python classes that is automatically called when a new object is created.",
-                    tips: ["Similar to constructors in other languages", "First parameter should be 'self'", "Can accept additional parameters for initialization"]
-                },
-                {
-                    question: "What does PEP 8 refer to?",
-                    options: ["Python Enhancement Proposal for style guide", "Python Error Protocol 8", "Python Execution Process 8", "Python Extension Package 8"],
-                    correct: 0,
-                    explanation: "PEP 8 is the official style guide for Python code, providing conventions for writing readable code.",
-                    tips: ["Indent using 4 spaces per level", "Limit lines to 79 characters", "Use snake_case for function/variable names"]
-                },
-                {
-                    question: "What is the difference between 'is' and '==' in Python?",
-                    options: ["'is' checks identity, '==' checks equality", "'is' checks equality, '==' checks identity", "They are identical", "'is' is for numbers, '==' is for strings"],
-                    correct: 0,
-                    explanation: "'is' checks if two variables point to the same object (identity), while '==' checks if the values are equal.",
-                    tips: ["Use 'is' for None checks: if x is None", "For value comparison, use '=='", "'is' uses id() function internally"]
-                },
-                {
-                    question: "What does the 'yield' keyword do?",
-                    options: ["Creates a generator", "Stops program execution", "Imports a module", "Defines a constant"],
-                    correct: 0,
-                    explanation: "'yield' is used in generator functions to return a value without terminating the function, allowing it to resume where it left off.",
-                    tips: ["Memory efficient for large datasets", "Generator functions return iterator objects", "Use next() to get next value"]
-                },
-                {
-                    question: "What is the Global Interpreter Lock (GIL)?",
-                    options: ["A mutex protecting Python object access", "A global variable locker", "A garbage collection mechanism", "A file locking system"],
-                    correct: 0,
-                    explanation: "GIL is a mutex that allows only one thread to execute Python bytecode at a time in CPython.",
-                    tips: ["Affects multi-threaded performance", "Doesn't affect multi-processing", "CPython specific implementation detail"]
-                },
-                {
-                    question: "How do you handle exceptions in Python?",
-                    options: ["try-except blocks", "catch-throw statements", "error-handle blocks", "exception-handle blocks"],
-                    correct: 0,
-                    explanation: "Python uses try-except blocks to catch and handle exceptions that may occur during program execution.",
-                    tips: ["Use specific exception types", "Finally block always executes", "Else block runs if no exception occurs"]
-                },
-                {
-                    question: "What are decorators in Python?",
-                    options: ["Functions that modify other functions", "Special syntax for comments", "Type declarations", "Module import statements"],
-                    correct: 0,
-                    explanation: "Decorators are functions that modify the behavior of other functions or classes using the @decorator syntax.",
-                    tips: ["Use @ symbol to apply decorators", "Can be chained", "Functools.wraps preserves metadata"]
-                },
-                {
-                    question: "What is the purpose of __name__ == '__main__'?",
-                    options: ["Checks if script is run directly", "Imports the main module", "Defines the main class", "Creates main function"],
-                    correct: 0,
-                    explanation: "This check allows code to execute only when the script is run directly, not when imported as a module.",
-                    tips: ["Useful for testing code", "Prevents code execution on import", "Common pattern in Python scripts"]
-                },
-                {
-                    question: "What are *args and **kwargs?",
-                    options: ["Variable-length arguments", "Mathematical operators", "Special class methods", "Import statements"],
-                    correct: 0,
-                    explanation: "*args collects positional arguments as a tuple, **kwargs collects keyword arguments as a dictionary.",
-                    tips: ["*args must come before **kwargs", "Can mix with regular parameters", "Useful for wrapper functions"]
-                },
-                {
-                    question: "What is a lambda function?",
-                    options: ["Anonymous inline function", "A type of loop", "A decorator", "A module"],
-                    correct: 0,
-                    explanation: "Lambda functions are small anonymous functions defined with the lambda keyword, limited to a single expression.",
-                    tips: ["Syntax: lambda arguments: expression", "Cannot contain statements", "Often used with map(), filter(), sorted()"]
-                },
-                {
-                    question: "What is the difference between shallow and deep copy?",
-                    options: ["Deep copy creates new objects, shallow copy references", "Shallow copy is faster", "Deep copy only works for lists", "Shallow copy uses more memory"],
-                    correct: 0,
-                    explanation: "Shallow copy creates a new object but references nested objects, while deep copy creates entirely new objects recursively.",
-                    tips: ["Use copy() for shallow copy", "Use deepcopy() from copy module", "Deep copy is more memory intensive"]
-                },
-                {
-                    question: "What are Python's magic/dunder methods?",
-                    options: ["Special methods with double underscores", "Private methods", "Built-in functions", "Decorator methods"],
-                    correct: 0,
-                    explanation: "Dunder methods (double underscore) are special methods that Python calls implicitly, like __init__, __str__, __add__.",
-                    tips: ["Implement operator overloading", "__str__ for readable representation", "__repr__ for unambiguous representation"]
-                },
-                {
-                    question: "How does Python manage memory?",
-                    options: ["Reference counting and garbage collection", "Manual memory management", "Only reference counting", "Only garbage collection"],
-                    correct: 0,
-                    explanation: "Python uses reference counting for immediate cleanup and cyclic garbage collector for circular references.",
-                    tips: ["del keyword decreases reference count", "gc module for garbage collection control", "Circular references need garbage collector"]
-                },
+            "question": "Which keyword is used to handle exceptions in Python?",
+            "options": ["try", "catch", "exception", "handle"],
+            "correct": 0,
+            "explanation": "The 'try' block is used to wrap code that might raise an exception, followed by 'except' blocks to handle them.",
+            "tips": ["Use try-except for error handling", "You can have multiple except blocks", "Use 'finally' for cleanup code"]
+        },
+        {
+            "question": "What is the output of 'print(3 * 'abc')' in Python?",
+            "options": ["abcabcabc", "abc3", "3abc", "Error"],
+            "correct": 0,
+            "explanation": "In Python, multiplying a string by an integer repeats the string that many times.",
+            "tips": ["String multiplication is called repetition", "Works only with integer multipliers", "Can be useful for creating patterns"]
+        },
+        {
+            "question": "Which method is used to add an element to a list?",
+            "options": [".append()", ".add()", ".insert()", ".push()"],
+            "correct": 0,
+            "explanation": "The .append() method adds an element to the end of a list.",
+            "tips": [".insert() adds at specific position", ".extend() adds multiple elements", "Lists are mutable sequences"]
+        },
+        {
+            "question": "What does the 'len()' function return for a dictionary?",
+            "options": ["Number of key-value pairs", "Number of keys only", "Number of values only", "Memory size"],
+            "correct": 0,
+            "explanation": "len() returns the number of key-value pairs (items) in a dictionary.",
+            "tips": ["Dictionaries are unordered collections", "Keys must be hashable", "Values can be any type"]
+        },
+        {
+            "question": "Which operator is used for exponentiation in Python?",
+            "options": ["**", "^", "^^", "pow()"],
+            "correct": 0,
+            "explanation": "The double asterisk (**) is the exponentiation operator in Python.",
+            "tips": ["2**3 equals 8", "pow(2,3) also works", "^ is bitwise XOR, not exponent"]
+        },
+        {
+            "question": "What is the result of 'bool('False')' in Python?",
+            "options": ["True", "False", "Error", "None"],
+            "correct": 0,
+            "explanation": "Non-empty strings evaluate to True in boolean context, regardless of their content.",
+            "tips": ["Empty string is False", "bool(0) is False", "bool(1) is True"]
+        },
+        {
+            "question": "Which module is used for working with dates and times?",
+            "options": ["datetime", "time", "date", "calendar"],
+            "correct": 0,
+            "explanation": "The datetime module provides classes for manipulating dates and times.",
+            "tips": ["time module handles time-related functions", "calendar module works with calendars", "datetime.datetime is most commonly used"]
+        },
+        {
+            "question": "What is the purpose of 'self' in Python class methods?",
+            "options": ["Refers to the instance", "Refers to the class", "Optional parameter", "Refers to parent class"],
+            "correct": 0,
+            "explanation": "'self' refers to the instance of the class and is used to access its attributes and methods.",
+            "tips": ["First parameter in instance methods", "Can use any name but 'self' is convention", "Not needed in static methods"]
+        },
+        {
+            "question": "Which data structure uses LIFO (Last In First Out) principle?",
+            "options": ["Stack", "Queue", "Heap", "Array"],
+            "correct": 0,
+            "explanation": "Stack follows LIFO principle where the last element added is the first one removed.",
+            "tips": ["Queue follows FIFO", "Can implement stack using list", "Use append() and pop() for stack operations"]
+        },
+        {
+            "question": "What does 'list(range(5))' produce?",
+            "options": ["[0, 1, 2, 3, 4]", "[1, 2, 3, 4, 5]", "[0, 1, 2, 3, 4, 5]", "[1, 2, 3, 4]"],
+            "correct": 0,
+            "explanation": "range(5) generates numbers from 0 to 4 (5 is exclusive).",
+            "tips": ["range(start, stop, step)", "range(5) means start=0, stop=5", "range returns an iterable, not a list"]
+        },
+        {
+            "question": "Which is used to read input from user?",
+            "options": ["input()", "read()", "scan()", "get_input()"],
+            "correct": 0,
+            "explanation": "input() function reads a line from input and returns it as a string.",
+            "tips": ["Always returns string type", "Can provide prompt: input('Enter:')", "Use int() to convert to integer"]
+        },
+        {
+            "question": "What is the correct way to create an empty set?",
+            "options": ["set()", "{}", "[]", "()"],
+            "correct": 0,
+            "explanation": "set() creates an empty set. {} creates an empty dictionary.",
+            "tips": ["{1,2,3} creates a set with elements", "Sets are unordered", "Sets don't allow duplicates"]
+        },
+        {
+            "question": "Which is NOT a valid variable name in Python?",
+            "options": ["2var", "_var", "var2", "var_two"],
+            "correct": 0,
+            "explanation": "Variable names cannot start with a number, but can contain numbers after the first character.",
+            "tips": ["Start with letter or underscore", "Can contain letters, numbers, underscores", "Case sensitive"]
+        },
+        {
+            "question": "What is the output of 'print(type([]))'?",
+            "options": ["<class 'list'>", "<class 'array'>", "<class 'tuple'>", "<class 'sequence'>"],
+            "correct": 0,
+            "explanation": "[] creates a list, so type([]) returns <class 'list'>.",
+            "tips": ["type() returns the type of object", "isinstance() checks type with inheritance", "List is a built-in class"]
+        },
+        {
+            "question": "Which loop is used to iterate over a sequence?",
+            "options": ["for", "while", "do-while", "repeat"],
+            "correct": 0,
+            "explanation": "for loop is used to iterate over sequences like lists, tuples, strings, etc.",
+            "tips": ["while loop repeats while condition is true", "Python has no do-while loop", "Can use enumerate() to get index"]
+        },
+        {
+            "question": "What does 'a[::-1]' do to a string?",
+            "options": ["Reverses the string", "Creates a copy", "Raises error", "Removes last character"],
+            "correct": 0,
+            "explanation": "The slice [::-1] with step -1 reverses the sequence.",
+            "tips": ["Works with lists and tuples too", "[start:stop:step]", "Can use reversed() function"]
+        },
+        {
+            "question": "Which is used to remove whitespace from string ends?",
+            "options": [".strip()", ".trim()", ".clean()", ".remove()"],
+            "correct": 0,
+            "explanation": ".strip() removes leading and trailing whitespace from a string.",
+            "tips": [".lstrip() removes left only", ".rstrip() removes right only", "Can specify characters to remove"]
+        },
+        {
+            "question": "What is the result of '10 // 3'?",
+            "options": ["3", "3.333", "3.0", "4"],
+            "correct": 0,
+            "explanation": "// is floor division operator, returns integer result rounded down.",
+            "tips": ["10 / 3 returns 3.333...", "10 % 3 returns remainder 1", "// works with floats too"]
+        },
+        {
+            "question": "Which keyword creates an anonymous function?",
+            "options": ["lambda", "def", "func", "anonymous"],
+            "correct": 0,
+            "explanation": "lambda creates anonymous functions (functions without a name).",
+            "tips": ["lambda x: x*2", "Can have multiple parameters", "Limited to single expression"]
+        },
+        {
+            "question": "What is the purpose of '__init__' method?",
+            "options": ["Constructor", "Destructor", "Initializer", "Class method"],
+            "correct": 0,
+            "explanation": "__init__ is the constructor method called when a new object is created.",
+            "tips": ["First parameter is 'self'", "Not required but common", "Used to set initial attributes"]
+        },
+        {
+            "question": "Which module is used for random numbers?",
+            "options": ["random", "rand", "randomize", "numpy.random"],
+            "correct": 0,
+            "explanation": "The random module provides functions for generating random numbers.",
+            "tips": ["random.random() returns float 0-1", "random.randint(a,b) returns integer", "seed() for reproducibility"]
+        },
+        {
+            "question": "What does 'is' operator check?",
+            "options": ["Identity", "Equality", "Type", "Value"],
+            "correct": 0,
+            "explanation": "'is' checks if two variables refer to the same object (identity), not just equal values.",
+            "tips": ["'==' checks equality", "Use 'is' for None, True, False", "Different objects can have same value"]
+        },
+        {
+            "question": "Which is used to open a file for reading?",
+            "options": ["open('file.txt', 'r')", "open('file.txt', 'w')", "open('file.txt', 'a')", "open('file.txt', 'x')"],
+            "correct": 0,
+            "explanation": "'r' mode opens file for reading (default mode).",
+            "tips": ["'w' writes (overwrites)", "'a' appends", "'x' creates (fails if exists)"]
+        },
+        {
+            "question": "What is the output of 'print(2 + 3 * 4)'?",
+            "options": ["14", "20", "24", "Error"],
+            "correct": 0,
+            "explanation": "Multiplication (*) has higher precedence than addition (+), so 3*4=12 then +2=14.",
+            "tips": ["PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction", "Use parentheses to control order"]
+        },
+        {
+            "question": "Which method converts string to lowercase?",
+            "options": [".lower()", ".tolower()", ".casefold()", ".small()"],
+            "correct": 0,
+            "explanation": ".lower() returns a copy of the string converted to lowercase.",
+            "tips": [".upper() converts to uppercase", ".casefold() is more aggressive", ".title() capitalizes each word"]
+        },
+        {
+            "question": "What is the purpose of 'pass' statement?",
+            "options": ["Do nothing placeholder", "Skip iteration", "Exit loop", "Break function"],
+            "correct": 0,
+            "explanation": "'pass' is a null operation - it does nothing but serves as a placeholder where syntax requires a statement.",
+            "tips": ["Useful in empty functions/classes", "Different from 'continue'", "Helps with incomplete code"]
+        },
+        {
+            "question": "Which imports all names from a module?",
+            "options": ["from module import *", "import module", "import * from module", "include module"],
+            "correct": 0,
+            "explanation": "'from module import *' imports all names from the module into current namespace.",
+            "tips": ["Generally discouraged", "Can cause name conflicts", "Better to import specific names"]
+        },
+        {
+            "question": "What does 'ord('A')' return?",
+            "options": ["65", "97", "'A'", "Error"],
+            "correct": 0,
+            "explanation": "ord() returns an integer representing the Unicode code point of a character.",
+            "tips": ["ord('a') is 97", "chr(65) is 'A'", "Works with any Unicode character"]
+        },
+        {
+            "question": "Which is used to check if key exists in dictionary?",
+            "options": ["'key' in dict", "dict.has_key()", "dict.exists()", "dict.contains()"],
+            "correct": 0,
+            "explanation": "'key' in dict returns True if key exists in dictionary (Python 3).",
+            "tips": [".get() returns value or default", ".keys() returns view of keys", "has_key() removed in Python 3"]
+        },
+        {
+            "question": "What is the result of 'bool([])'?",
+            "options": ["False", "True", "Error", "None"],
+            "correct": 0,
+            "explanation": "Empty sequences (lists, tuples, strings) evaluate to False in boolean context.",
+            "tips": ["bool([1]) is True", "bool('') is False", "bool(0) is False"]
+        },
+        {
+            "question": "Which creates a dictionary with keys 'a' and 'b'?",
+            "options": ["{'a': 1, 'b': 2}", "dict('a'=1, 'b'=2)", "dict(a:1, b:2)", "[('a',1),('b',2)]"],
+            "correct": 0,
+            "explanation": "Curly braces with key-value pairs create a dictionary.",
+            "tips": ["dict() constructor also works", "Keys must be hashable", "Values can be any type"]
+        },
+        {
+            "question": "What is the purpose of 'global' keyword?",
+            "options": ["Declare global variable", "Import module", "Create constant", "Define function"],
+            "correct": 0,
+            "explanation": "'global' declares that a variable refers to a global variable inside a function.",
+            "tips": ["Without global, assignment creates local", "Use sparingly", "Consider passing as parameter instead"]
+        },
+        {
+            "question": "Which module is used for mathematical functions?",
+            "options": ["math", "calc", "numpy", "algebra"],
+            "correct": 0,
+            "explanation": "The math module provides mathematical functions like sqrt, sin, cos, etc.",
+            "tips": ["import math", "math.sqrt(4) returns 2.0", "cmath for complex numbers"]
+        },
+        {
+            "question": "What does 'a = b = 5' do?",
+            "options": ["Sets both to 5", "Checks equality", "Swaps values", "Raises error"],
+            "correct": 0,
+            "explanation": "Chain assignment sets multiple variables to the same value.",
+            "tips": ["a = b = c = 0", "Different from a == b", "All refer to same object initially"]
+        },
+        {
+            "question": "Which is used to exit a function early?",
+            "options": ["return", "exit", "break", "stop"],
+            "correct": 0,
+            "explanation": "'return' exits a function and optionally returns a value.",
+            "tips": ["Functions without return return None", "break exits loops", "exit() exits program"]
+        },
+        {
+            "question": "What is the output of 'print('Hello' + 3 * '!')'?",
+            "options": ["Hello!!!", "Hello!", "Hello3!", "Error"],
+            "correct": 0,
+            "explanation": "3 * '!' produces '!!!', then concatenated with 'Hello' gives 'Hello!!!'.",
+            "tips": ["String concatenation with +", "String repetition with *", "Both must be strings for +"]
+        },
+        {
+            "question": "Which method removes and returns last list element?",
+            "options": [".pop()", ".remove()", ".delete()", ".cut()"],
+            "correct": 0,
+            "explanation": ".pop() removes and returns the last element by default, or element at given index.",
+            "tips": [".pop(0) removes first", ".remove(value) removes by value", "del list[index] also works"]
+        },
+        {
+            "question": "What does 'enumerate()' do?",
+            "options": ["Adds counter to iterable", "Counts elements", "Sorts items", "Filters sequence"],
+            "correct": 0,
+            "explanation": "enumerate() returns an iterator yielding pairs of (index, element) from an iterable.",
+            "tips": ["for i, item in enumerate(list):", "Start parameter: enumerate(list, start=1)", "Useful when index needed"]
+        },
+        {
+            "question": "Which is used to create a package?",
+            "options": ["__init__.py file", "package.py", "main.py", "setup.py"],
+            "correct": 0,
+            "explanation": "A directory containing __init__.py file is treated as a package by Python.",
+            "tips": ["Can be empty file", "Executed when package imported", "Python 3.3+ allows implicit namespaces"]
+        },
+        {
+            "question": "What is the result of '3 == 3.0'?",
+            "options": ["True", "False", "Error", "None"],
+            "correct": 0,
+            "explanation": "== checks equality of values, not types, and 3 equals 3.0 numerically.",
+            "tips": ["3 is 3.0 is False (different types)", "int and float can be equal", "Use type() to check types"]
+        },
+        {
+            "question": "Which decorator makes a method class-level?",
+            "options": ["@classmethod", "@staticmethod", "@class", "@instance"],
+            "correct": 0,
+            "explanation": "@classmethod decorator makes a method receive the class as first argument instead of instance.",
+            "tips": ["First parameter is 'cls'", "Can call without instance", "Used for factory methods"]
+        },
+        {
+            "question": "What does 'zip()' function do?",
+            "options": ["Pairs elements from iterables", "Compresses files", "Sorts data", "Filters items"],
+            "correct": 0,
+            "explanation": "zip() returns an iterator that aggregates elements from multiple iterables.",
+            "tips": ["Stops at shortest iterable", "list(zip([1,2],['a','b']))", "Use * to unzip"]
+        },
+        {
+            "question": "Which is NOT a Python built-in data type?",
+            "options": ["array", "list", "tuple", "dict"],
+            "correct": 0,
+            "explanation": "array is from array module, not built-in. List, tuple, dict are built-in.",
+            "tips": ["Built-in types: int, float, str, list, tuple, dict, set, bool", "array module provides array type", "numpy has ndarray"]
+        },
+        {
+            "question": "What is the purpose of 'with' statement?",
+            "options": ["Context management", "Loop control", "Condition check", "Function definition"],
+            "correct": 0,
+            "explanation": "'with' statement ensures proper acquisition and release of resources (context managers).",
+            "tips": ["Commonly used with files", "Automatically closes files", "Uses __enter__ and __exit__ methods"]
+        },
+        {
+            "question": "Which returns the absolute value?",
+            "options": ["abs()", "absolute()", "absval()", "mod()"],
+            "correct": 0,
+            "explanation": "abs() returns the absolute value of a number.",
+            "tips": ["abs(-5) returns 5", "Works with integers and floats", "For complex numbers, returns magnitude"]
+        },
+        {
+            "question": "What does 'a = [1, 2]; b = a; b[0] = 3' do to a?",
+            "options": ["a becomes [3, 2]", "a stays [1, 2]", "Error", "b becomes new list"],
+            "correct": 0,
+            "explanation": "Both a and b reference the same list object, so modifying through b affects a.",
+            "tips": ["Use b = a.copy() for copy", "b = a[:] also copies", "Lists are mutable"]
+        },
+        {
+            "question": "Which is used to sort a list in-place?",
+            "options": [".sort()", "sorted()", ".order()", "sort()"],
+            "correct": 0,
+            "explanation": ".sort() method sorts the list in-place and returns None.",
+            "tips": ["sorted() returns new sorted list", "sort() modifies original", "Both accept key and reverse parameters"]
+        },
+        {
+            "question": "What is the result of 'print(0.1 + 0.2 == 0.3)'?",
+            "options": ["False", "True", "Error", "Depends"],
+            "correct": 0,
+            "explanation": "Due to floating-point precision, 0.1 + 0.2 is not exactly 0.3 in binary representation.",
+            "tips": ["Use abs(0.1+0.2-0.3) < 1e-10", "Decimal module for exact decimals", "Common issue in all languages"]
+        },
+        {
+            "question": "Which creates a generator function?",
+            "options": ["Use yield", "Use return", "Use generate", "Use produce"],
+            "correct": 0,
+            "explanation": "Functions containing 'yield' are generator functions that return a generator iterator.",
+            "tips": ["Generators are memory efficient", "Yield pauses function", "Can iterate with next()"]
+        },
+        {
+            "question": "What does 'break' do in a loop?",
+            "options": ["Exits loop", "Skips iteration", "Restarts loop", "Pauses loop"],
+            "correct": 0,
+            "explanation": "'break' immediately exits the innermost loop (for or while).",
+            "tips": ["'continue' skips to next iteration", "Can break nested loops with flags", "else clause after loop runs if no break"]
+        },
+        {
+            "question": "Which module is used for JSON operations?",
+            "options": ["json", "simplejson", "js", "javascript"],
+            "correct": 0,
+            "explanation": "The json module provides functions to work with JSON data.",
+            "tips": ["json.dumps() converts to string", "json.loads() parses string", "json.dump() writes to file"]
+        },
+        {
+            "question": "What is the output of 'max('hello')'?",
+            "options": ["'o'", "'h'", "5", "Error"],
+            "correct": 0,
+            "explanation": "max() returns the largest item in an iterable. For strings, compares Unicode code points.",
+            "tips": ["'o' > 'h' in Unicode", "min('hello') is 'e'", "Works with any comparable types"]
+        },
+        {
+            "question": "Which is used to get current date and time?",
+            "options": ["datetime.datetime.now()", "time.time()", "date.today()", "datetime.current()"],
+            "correct": 0,
+            "explanation": "datetime.datetime.now() returns current local date and time as datetime object.",
+            "tips": ["datetime.utcnow() for UTC", "time.time() returns timestamp", "date.today() returns date only"]
+        },
                 {
                     question: "What is the difference between @staticmethod and @classmethod?",
                     options: ["Classmethod takes cls, staticmethod doesn't", "Staticmethod is faster", "Classmethod cannot access class", "Staticmethod takes self"],
@@ -2852,6 +3054,7 @@ function generatePythonQuestions() {
 //JavaScript questions
 function generateJavaScriptQuestions() {
             return [
+                
                 {
                     question: "What will be the output of: console.log(2 + '2' + 2)?",
                     options: ["222", "6", "'222'", "NaN"],

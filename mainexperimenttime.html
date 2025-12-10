@@ -1044,6 +1044,278 @@
         .btn-success:hover {
             background: #22c55e;
         }
+
+        .focus-timer-container {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .timer-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timer-adjustment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .adjust-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--light);
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 20px;
+        }
+
+        .adjust-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .timer-display {
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--primary);
+            min-width: 200px;
+            text-align: center;
+        }
+
+        .timer-controls {
+            display: flex;
+            gap: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .timer-display {
+                font-size: 3rem;
+            }
+
+            .adjust-btn {
+                width: 40px;
+                height: 40px;
+                margin: 0 10px;
+            }
+        }
+
+
+        /* Centered Focus Timer Styles */
+        .focus-timer-center {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .timer-header {
+            margin-bottom: 25px;
+        }
+
+        .timer-header h3 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .timer-header p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .timer-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .timer-adjustment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .adjust-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--light);
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        .adjust-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .timer-display-center {
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--primary);
+            min-width: 200px;
+            text-align: center;
+            font-family: monospace;
+        }
+
+        .timer-controls-center {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .timer-modes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .timer-mode-btn {
+            padding: 10px 15px;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+            background: white;
+            color: var(--gray);
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+        }
+
+        .timer-mode-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .timer-mode-btn:hover {
+            border-color: var(--primary);
+        }
+
+
+        .btn-warning {
+            background-color: var(--warning);
+            color: white;
+            border: none;
+        }
+
+        .btn-warning:hover {
+            background-color: #e69500;
+            color: white;
+        }
+
+        /* Timer controls layout improvements */
+        .timer-controls-center {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            align-items: center;
+        }
+
+        .timer-controls-center .btn {
+            min-width: 100px;
+            padding: 12px 20px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .timer-controls-center .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .timer-controls-center .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Button specific styles */
+        #pauseTimerBtnCenter {
+            display: none;
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+        }
+
+        #startTimerBtnCenter {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #resetTimerBtnCenter {
+            background: white;
+            border: 2px solid var(--primary);
+        }
+
+        /* Animation for timer display */
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes celebrate {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .adjust-btn:active {
+            transform: scale(0.9) !important;
+        }
+
+        .timer-mode-btn:active {
+            transform: scale(0.95) !important;
+        }
     </style>
 </head>
 
@@ -1122,6 +1394,7 @@
             </aside>
 
             <!-- Main Content -->
+            <!-- Main Content -->
             <main class="main-content">
                 <!-- Welcome Card -->
                 <div class="welcome-card">
@@ -1136,42 +1409,46 @@
                     </div>
                 </div>
 
-                <!-- Stats Cards -->
-                <div class="stats-cards">
-                    <div class="stat-card">
-                        <div class="stat-icon icon-1">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>42</h3>
-                            <p>Lessons Completed</p>
-                        </div>
+                <!-- Centered Focus Timer -->
+                <div class="focus-timer-center">
+                    <div class="timer-header">
+                        <h3><i class="fas fa-clock"></i> Focus Timer</h3>
+                        <p>Pomodoro technique: Focus for 30 minutes, then take a break</p>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-icon icon-2">
-                            <i class="fas fa-fire"></i>
+
+                    <div class="timer-container">
+                        <!-- Timer adjustment controls -->
+                        <div class="timer-adjustment">
+                            <button class="adjust-btn" id="decreaseTime">
+                                <i class="fas fa-minus"></i>
+                            </button>
+
+                            <div class="timer-display-center" id="timerDisplayCenter">30:00</div>
+
+                            <button class="adjust-btn" id="increaseTime">
+                                <i class="fas fa-plus"></i>
+                            </button>
                         </div>
-                        <div class="stat-info">
-                            <h3>18</h3>
-                            <p>Day Streak</p>
+
+
+                        <!-- Timer controls -->
+                        <div class="timer-controls-center">
+                            <button class="btn btn-warning" id="pauseTimerBtnCenter">
+                                <i class="fas fa-pause"></i> Pause
+                            </button>
+                            <button class="btn btn-primary" id="startTimerBtnCenter">
+                                <i class="fas fa-play"></i> Start
+                            </button>
+                            <button class="btn btn-outline" id="resetTimerBtnCenter">
+                                <i class="fas fa-redo"></i> Reset
+                            </button>
                         </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon icon-3">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>94%</h3>
-                            <p>Average Score</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon icon-4">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="stat-info">
-                            <h3>156</h3>
-                            <p>Study Hours</p>
+
+                        <!-- Timer modes -->
+                        <div class="timer-modes">
+                            <button class="timer-mode-btn active" data-minutes="30">Focus (30 min)</button>
+                            <button class="timer-mode-btn" data-minutes="5">Short Break (5 min)</button>
+                            <button class="timer-mode-btn" data-minutes="15">Long Break (15 min)</button>
                         </div>
                     </div>
                 </div>
@@ -1292,24 +1569,6 @@
             <!-- Right Sidebar -->
             <aside class="right-sidebar">
                 <!-- Productivity Tools -->
-                <div class="productivity-tools">
-                    <h3><i class="fas fa-tools"></i> Productivity Tools</h3>
-                    <div class="focus-timer">
-                        <h4>Focus Timer</h4>
-                        <div class="timer-display" id="timerDisplay">25:00</div>
-                        <div class="timer-controls">
-                            <button class="btn btn-primary" id="startTimerBtn">
-                                <i class="fas fa-play"></i> Start
-                            </button>
-                            <button class="btn btn-outline" id="resetTimerBtn">
-                                <i class="fas fa-redo"></i> Reset
-                            </button>
-                        </div>
-                        <p style="margin-top: 15px; font-size: 0.9rem; color: var(--gray);">
-                            Pomodoro technique: 25 min focus, 5 min break
-                        </p>
-                    </div>
-                </div>
 
                 <!-- AI Recommendations -->
                 <div class="ai-recommendations">
@@ -1569,14 +1828,14 @@
 
         // Expanded Questions Database with 50+ questions per subject
         const questionsDatabase = {
-            javascript: generateJavaScriptQuestions(),
-            python: generatePythonQuestions(),
-            html: generateHTMLQuestions(),
-            css: generateCSSQuestions(),
-            react: generateReactQuestions(),
-            c: generateCQuestions(),
-            algorithms: generateAlgorithmQuestions(),
-            datastructures: generateDataStructureQuestions()
+            // javascript: generateJavaScriptQuestions(),
+            // python: generatePythonQuestions(),
+            // html: generateHTMLQuestions(),
+            // css: generateCSSQuestions(),
+            // react: generateReactQuestions(),
+            // c: generateCQuestions(),
+            // algorithms: generateAlgorithmQuestions(),
+            // datastructures: generateDataStructureQuestions()
         };
 
 
@@ -2301,6 +2560,131 @@
                 alert("Loading your next lesson: 'Understanding Neural Networks'...");
             });
         }
+
+
+
+        // Focus Timer (Centered) - Updated for 30 minute default
+        let timerIntervalCenter;
+        let timerSecondsCenter = 30 * 60; // 30 minutes in seconds
+        let isTimerRunningCenter = false;
+
+        const timerDisplayCenter = document.getElementById('timerDisplayCenter');
+        const startTimerBtnCenter = document.getElementById('startTimerBtnCenter');
+        const pauseTimerBtnCenter = document.getElementById('pauseTimerBtnCenter');
+        const resetTimerBtnCenter = document.getElementById('resetTimerBtnCenter');
+        const decreaseTimeBtn = document.getElementById('decreaseTime');
+        const increaseTimeBtn = document.getElementById('increaseTime');
+        const timerModeBtns = document.querySelectorAll('.timer-mode-btn');
+
+        function updateTimerDisplayCenter() {
+            const minutes = Math.floor(timerSecondsCenter / 60);
+            const seconds = timerSecondsCenter % 60;
+            timerDisplayCenter.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+            // Change color when time is running low
+            if (timerSecondsCenter < 60) {
+                timerDisplayCenter.style.color = '#ef4444'; // Red
+            } else if (timerSecondsCenter < 300) {
+                timerDisplayCenter.style.color = '#f59e0b'; // Orange
+            } else {
+                timerDisplayCenter.style.color = '#4361ee'; // Blue
+            }
+        }
+
+        // Initialize display
+        updateTimerDisplayCenter();
+
+        // Time adjustment buttons
+        decreaseTimeBtn.addEventListener('click', function () {
+            if (!isTimerRunningCenter && timerSecondsCenter > 60) { // Minimum 1 minute
+                timerSecondsCenter -= 60; // Decrease by 1 minute
+                updateTimerDisplayCenter();
+            }
+        });
+
+        increaseTimeBtn.addEventListener('click', function () {
+            if (!isTimerRunningCenter && timerSecondsCenter < 60 * 60) { // Maximum 60 minutes
+                timerSecondsCenter += 60; // Increase by 1 minute
+                updateTimerDisplayCenter();
+            }
+        });
+
+        // Timer mode buttons
+        timerModeBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                if (!isTimerRunningCenter) {
+                    // Remove active class from all buttons
+                    timerModeBtns.forEach(b => b.classList.remove('active'));
+
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    // Set timer to selected mode
+                    const minutes = parseInt(this.dataset.minutes);
+                    timerSecondsCenter = minutes * 60;
+                    updateTimerDisplayCenter();
+                }
+            });
+        });
+
+        // Start timer
+        startTimerBtnCenter.addEventListener('click', function () {
+            if (!isTimerRunningCenter) {
+                isTimerRunningCenter = true;
+                startTimerBtnCenter.style.display = 'none';
+                pauseTimerBtnCenter.style.display = 'inline-block';
+
+                timerIntervalCenter = setInterval(() => {
+                    timerSecondsCenter--;
+                    updateTimerDisplayCenter();
+
+                    if (timerSecondsCenter <= 0) {
+                        clearInterval(timerIntervalCenter);
+                        isTimerRunningCenter = false;
+                        startTimerBtnCenter.style.display = 'inline-block';
+                        pauseTimerBtnCenter.style.display = 'none';
+
+                        // Play notification sound (if available) or show alert
+                        alert("Time's up! Take a break.");
+
+                        // Auto-switch to short break if in focus mode
+                        const activeMode = document.querySelector('.timer-mode-btn.active');
+                        if (activeMode && activeMode.dataset.minutes === "30") {
+                            document.querySelector('.timer-mode-btn[data-minutes="5"]').click();
+                        }
+                    }
+                }, 1000);
+            }
+        });
+
+        // Pause timer
+        pauseTimerBtnCenter.addEventListener('click', function () {
+            if (isTimerRunningCenter) {
+                clearInterval(timerIntervalCenter);
+                isTimerRunningCenter = false;
+                startTimerBtnCenter.style.display = 'inline-block';
+                pauseTimerBtnCenter.style.display = 'none';
+            }
+        });
+
+        // Reset timer
+        resetTimerBtnCenter.addEventListener('click', function () {
+            clearInterval(timerIntervalCenter);
+            isTimerRunningCenter = false;
+            startTimerBtnCenter.style.display = 'inline-block';
+            pauseTimerBtnCenter.style.display = 'none';
+
+            // Reset to active mode's time
+            const activeMode = document.querySelector('.timer-mode-btn.active');
+            if (activeMode) {
+                const minutes = parseInt(activeMode.dataset.minutes);
+                timerSecondsCenter = minutes * 60;
+            } else {
+                timerSecondsCenter = 30 * 60; // Default to 30 minutes
+            }
+
+            updateTimerDisplayCenter();
+        });
     </script>
 </body>
 
