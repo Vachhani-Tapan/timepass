@@ -2391,7 +2391,7 @@ function generateHTMLQuestions() {
       "explanation": "The 'defer' attribute indicates that a script should be executed after the document has been parsed.",
       "tips": ["Scripts execute in order they appear", "Use for scripts that need full DOM", "Only for external scripts"]
     }
-];
+  ];
 }
 
 
