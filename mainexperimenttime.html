@@ -1316,6 +1316,249 @@
         .timer-mode-btn:active {
             transform: scale(0.95) !important;
         }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Make the dashboard take full available width */
+        .dashboard {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 280px 1fr 350px;
+            gap: 25px;
+            box-sizing: border-box;
+        }
+
+        /* Ensure header takes full width */
+        header {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Fix main content to prevent overflow */
+        .main-content {
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        /* Fix path container scroll */
+        .path-container {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* Fix sidebars width */
+        .sidebar,
+        .right-sidebar {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Fix focus timer container */
+        .focus-timer-center {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Fix tabs section */
+        .tabs-section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        /* Fix for very wide screens (above 1920px) */
+        @media (min-width: 1920px) {
+            .container {
+                max-width: 1600px;
+            }
+
+            .dashboard {
+                grid-template-columns: 300px 1fr 380px;
+            }
+
+            .path-card {
+                min-width: 280px;
+            }
+        }
+
+        /* Fix for standard desktop screens (1200px-1600px) */
+        @media (max-width: 1600px) {
+            .container {
+                max-width: 95%;
+            }
+
+            .dashboard {
+                grid-template-columns: 250px 1fr 320px;
+                gap: 20px;
+            }
+
+            .path-card {
+                min-width: 230px;
+            }
+        }
+
+        /* Fix for smaller desktop screens (1024px-1200px) */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 98%;
+                padding: 0 15px;
+            }
+
+            .dashboard {
+                grid-template-columns: 240px 1fr;
+                gap: 20px;
+            }
+
+            .right-sidebar {
+                grid-column: 1 / -1;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .path-card {
+                min-width: 220px;
+            }
+        }
+
+        /* Fix for tablet screens (768px-1024px) */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .dashboard {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .sidebar,
+            .right-sidebar {
+                width: 100%;
+            }
+
+            .right-sidebar {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Fix for mobile screens (below 768px) */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+
+            .nav-container {
+                padding: 12px 0;
+            }
+
+            .logo span {
+                font-size: 1.3rem;
+            }
+
+            .stats-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .timer-display-center {
+                font-size: 3rem;
+            }
+
+            .timer-controls-center .btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+
+            .path-card {
+                min-width: 260px;
+            }
+
+            .tab {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Prevent horizontal scroll on all screens */
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Ensure all content boxes properly */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Fix for navigation */
+        nav ul {
+            flex-wrap: wrap;
+        }
+
+        /* Make sure everything scales properly */
+        img,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Adjust font sizes for better scaling */
+        @media (min-width: 1400px) {
+            body {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 1400px) and (min-width: 1024px) {
+            body {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        /* Fix for the test interface width */
+        .test-interface {
+            width: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+        }
+
+        /* Fix modal width */
+        .modal-content,
+        .ai-modal-content,
+        .results-content {
+            width: 100%;
+            max-width: 90%;
+        }
+
+        /* Make sure the website never exceeds screen width */
+        body {
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        /* Fix for footer */
+        footer {
+            width: 100%;
+            margin-top: 30px;
+        }
     </style>
 </head>
 
@@ -1370,27 +1613,8 @@
                     <li><a href="#"><i class="fas fa-certificate"></i> Certifications</a></li>
                 </ul>
 
-                <h3><i class="fas fa-bullseye"></i> Weekly Goals</h3>
-                <div class="goals">
-                    <div class="path-card">
-                        <h4>Complete 5 lessons</h4>
-                        <div class="path-progress">
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 60%"></div>
-                            </div>
-                            <span>3/5 completed</span>
-                        </div>
-                    </div>
-                    <div class="path-card">
-                        <h4>Spend 10 hours learning</h4>
-                        <div class="path-progress">
-                            <div class="progress-bar">
-                                <div class="progress" style="width: 70%"></div>
-                            </div>
-                            <span>7/10 hours</span>
-                        </div>
-                    </div>
-                </div>
+                
+                
             </aside>
 
             <!-- Main Content -->
